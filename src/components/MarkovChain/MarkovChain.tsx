@@ -367,39 +367,6 @@ const MarkovChain = () => {
           <span className="velocidad-valor">{(velocidad / 1000).toFixed(1)}s</span>
         </div>
       </section>
-
-            {/* Explicación del dado mágico */}
-      <section className="dado-explicacion-section">
-        <h2>🎲 ¿Cómo funciona el Dado Mágico?</h2>
-        <div className="dado-explicacion-content">
-          <div className="dado-demo">
-            <div className="dado-mini">🎲</div>
-            <div className="dado-rango">1 - 100</div>
-          </div>
-          <div className="dado-texto">
-            <p>
-              El dado genera un <strong>número del 1 al 100</strong>. 
-              Dependiendo del número que salga, Michi irá a un lugar diferente.
-            </p>
-            <div className="rangos-ejemplo">
-              <p><strong>Ejemplo si Michi está en 🏠 Casa:</strong></p>
-              <div className="rango-item casa-rango">
-                <span>1 - 30</span> → 🏠 Se queda en Casa (30%)
-              </div>
-              <div className="rango-item parque-rango">
-                <span>31 - 80</span> → 🌳 Va al Parque (50%)
-              </div>
-              <div className="rango-item escuela-rango">
-                <span>81 - 100</span> → 🏫 Va a la Escuela (20%)
-              </div>
-            </div>
-            <p className="dado-conclusion">
-              💡 <strong>¡Entre más grande el rango, más probable es que Michi vaya ahí!</strong>
-            </p>
-          </div>
-        </div>
-      </section>
-
  
 
       {/* Estadísticas visuales */}
@@ -451,6 +418,38 @@ const MarkovChain = () => {
               {index < historial.length - 1 && <span className="paso-flecha">→</span>}
             </div>
           ))}
+        </div>
+      </section>
+
+               {/* Explicación del dado mágico */}
+      <section className="dado-explicacion-section">
+        <h2>🎲 ¿Cómo funciona el Dado Mágico?</h2>
+        <div className="dado-explicacion-content">
+          <div className="dado-demo">
+            <div className="dado-mini">🎲</div>
+            <div className="dado-rango">1 - 100</div>
+          </div>
+          <div className="dado-texto">
+            <p>
+              El dado genera un <strong>número del 1 al 100</strong>. 
+              Dependiendo del número que salga, Michi irá a un lugar diferente.
+            </p>
+            <div className="rangos-ejemplo">
+              <p><strong>Ejemplo si Michi está en 🏠 Casa:</strong></p>
+              <div className="rango-item casa-rango">
+                <span>1 - 30</span> → 🏠 Se queda en Casa (30%)
+              </div>
+              <div className="rango-item parque-rango">
+                <span>31 - 80</span> → 🌳 Va al Parque (50%)
+              </div>
+              <div className="rango-item escuela-rango">
+                <span>81 - 100</span> → 🏫 Va a la Escuela (20%)
+              </div>
+            </div>
+            <p className="dado-conclusion">
+              💡 <strong>¡Entre más grande el rango, más probable es que Michi vaya ahí!</strong>
+            </p>
+          </div>
         </div>
       </section>
 
